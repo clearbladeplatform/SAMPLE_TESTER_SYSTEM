@@ -1,0 +1,8 @@
+{
+    "description": "sample timer",
+    "frequency": 1800,
+    "name": "Timer1",
+    "repeats": 20,
+    "service_name": "RobsService",
+    "start_time": "2017-06-30T07:00:45Z"
+}

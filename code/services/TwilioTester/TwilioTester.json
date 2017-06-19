@@ -1,0 +1,10 @@
+{
+    "current_version": 6,
+    "dependencies": "clearblade,http",
+    "logging_enabled": "false",
+    "name": "TwilioTester",
+    "params": [],
+    "permissions": {},
+    "run_user": "",
+    "source": "TwilioTester.js"
+}

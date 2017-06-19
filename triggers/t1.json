@@ -1,0 +1,13 @@
+{
+    "event_definition": {
+        "def_keys": [
+            "deviceName"
+        ],
+        "def_module": "Device",
+        "def_name": "DeviceUpdated",
+        "visibility": true
+    },
+    "key_value_pairs": {},
+    "name": "t1",
+    "service_name": "RobsService"
+}

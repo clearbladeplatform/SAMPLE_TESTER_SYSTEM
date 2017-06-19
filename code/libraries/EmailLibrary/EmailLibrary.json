@@ -1,0 +1,8 @@
+{
+    "api": "",
+    "dependencies": "http,log",
+    "description": "",
+    "name": "EmailLibrary",
+    "version": 6,
+    "visibility": "system"
+}

@@ -1,0 +1,13 @@
+{
+    "current_version": 44,
+    "dependencies": "MpaGeoCodeLib,http,log",
+    "logging_enabled": "true",
+    "name": "Maptesting",
+    "params": [
+        "long",
+        "lat"
+    ],
+    "permissions": {},
+    "run_user": "",
+    "source": "Maptesting.js"
+}

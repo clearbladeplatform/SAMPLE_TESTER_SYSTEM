@@ -1,0 +1,10 @@
+{
+    "current_version": 11,
+    "dependencies": "EmailLibrary",
+    "logging_enabled": "true",
+    "name": "RobsService",
+    "params": [],
+    "permissions": {},
+    "run_user": "",
+    "source": "RobsService.js"
+}

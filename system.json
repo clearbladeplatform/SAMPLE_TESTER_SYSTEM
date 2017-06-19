@@ -1,0 +1,10 @@
+{
+    "auth": true,
+    "description": "",
+    "edge_sync": {},
+    "messaging_url": "platform.clearblade.com:1883",
+    "name": "SAMPLE TEST SYSTEM",
+    "platform_url": "https://platform.clearblade.com",
+    "system_key": "fcc09a920bdaff9da0b6acdb8b16",
+    "system_secret": "FCC09A920BE8BDBDFB99A3BDD9B601"
+}

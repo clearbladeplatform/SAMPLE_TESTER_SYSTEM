@@ -1,0 +1,223 @@
+{
+    "config": {
+        "allow_edit": true,
+        "columns": 3,
+        "datasources": [
+            {
+                "name": "dialMessageTopic",
+                "settings": {
+                    "topic_name": "device/dial1"
+                },
+                "type": "messageTopic"
+            },
+            {
+                "name": "mobileMessageTopic",
+                "settings": {
+                    "topic_name": "device/mobile1"
+                },
+                "type": "messageTopic"
+            },
+            {
+                "name": "temperatureMessageTopic",
+                "settings": {
+                    "topic_name": "device/temperatureSensor"
+                },
+                "type": "messageTopic"
+            }
+        ],
+        "panes": [
+            {
+                "col": {
+                    "3": 1
+                },
+                "col_width": "3",
+                "row": {
+                    "3": 1
+                },
+                "title": "Factory Dashboard",
+                "widgets": [
+                    {
+                        "settings": {
+                            "animate": true,
+                            "size": "regular",
+                            "title": "Omaha Factory",
+                            "value": "Control Room  1"
+                        },
+                        "type": "text_widget"
+                    }
+                ],
+                "width": 1
+            },
+            {
+                "col": {
+                    "3": 1,
+                    "5": 1
+                },
+                "col_width": 1,
+                "display_header": false,
+                "header_theme": "primary",
+                "row": {
+                    "3": 5,
+                    "5": 5
+                },
+                "title": "Dial",
+                "widgets": [
+                    {
+                        "settings": {
+                            "device_id": "dial1",
+                            "dial_name": "Cooler Speed Controller",
+                            "topic_name": "JSON.parse(datasources[\"dialMessageTopic\"])"
+                        },
+                        "type": "dial_widget"
+                    }
+                ],
+                "width": 1
+            },
+            {
+                "col": {
+                    "3": 2,
+                    "5": 2
+                },
+                "col_width": 1,
+                "row": {
+                    "3": 5,
+                    "5": 5
+                },
+                "title": "Mobile",
+                "widgets": [
+                    {
+                        "settings": {
+                            "buttonLabel": "High",
+                            "inputDataSource": "datasources[\"mobileMessageTopic\"]",
+                            "size": "regular",
+                            "targetDataSource": "datasources[\"mobileMessageTopic\"]"
+                        },
+                        "type": "simple_button"
+                    },
+                    {
+                        "settings": {
+                            "buttonLabel": "Medium",
+                            "inputDataSource": "datasources[\"mobileMessageTopic\"]",
+                            "size": "regular",
+                            "targetDataSource": "datasources[\"mobileMessageTopic\"]"
+                        },
+                        "type": "simple_button"
+                    },
+                    {
+                        "settings": {
+                            "buttonLabel": "Low",
+                            "inputDataSource": "datasources[\"mobileMessageTopic\"]",
+                            "size": "regular",
+                            "targetDataSource": "datasources[\"mobileMessageTopic\"]"
+                        },
+                        "type": "simple_button"
+                    },
+                    {
+                        "settings": {
+                            "buttonLabel": "Off",
+                            "inputDataSource": "datasources[\"mobileMessageTopic\"]",
+                            "size": "regular",
+                            "targetDataSource": "datasources[\"mobileMessageTopic\"]"
+                        },
+                        "type": "simple_button"
+                    }
+                ],
+                "width": 1
+            },
+            {
+                "col": {
+                    "3": 3,
+                    "5": 3
+                },
+                "col_width": 1,
+                "row": {
+                    "3": 5,
+                    "5": 5
+                },
+                "title": "Temperature Indicator",
+                "widgets": [
+                    {
+                        "settings": {
+                            "max_value": "400",
+                            "min_value": 0,
+                            "title": "Temperature",
+                            "units": "Fahrenheit",
+                            "value": "datasources[\"temperatureMessageTopic\"]"
+                        },
+                        "type": "gauge"
+                    },
+                    {
+                        "settings": {
+                            "inputName": "Input-Temperature",
+                            "inputType": "text",
+                            "sectionTitle": "Input Temperature",
+                            "size": "regular",
+                            "value": "datasources[\"temperatureMessageTopic\"]"
+                        },
+                        "type": "novi_input"
+                    }
+                ],
+                "width": 1
+            }
+        ],
+        "plugins": [],
+        "style": {
+            "forms": {
+                "numberInputBackgroundColor": "#f5f5f5",
+                "numberInputTextColor": "rgba(51,51,51,1)",
+                "textInputBackgroundColor": "#f5f5f5",
+                "textInputTextColor": "rgba(51,51,51,1)"
+            },
+            "listWidget": {
+                "activeBackgroundColor": "#6E8592",
+                "activeTextColor": "rgba(221,221,221,1)",
+                "backgroundColor": "transparent",
+                "hoverBackgroundColor": "rgba(221,221,221,1)",
+                "hoverTextColor": "rgba(51,51,51,1)",
+                "itemColor": "rgba(0,0,0,1)"
+            },
+            "panes": {
+                "activeTabTextColor": "rgba(51,51,51,1)",
+                "activeTabUnderlineColor": "#6E8592",
+                "backgroundColor": "#2a2a2a",
+                "border": "thin solid #2a2a2a",
+                "headingHeight": "30px",
+                "primaryBackgroundColor": "#f5f5f5",
+                "primaryBorder": "2px solid #D8D8D8",
+                "primaryBorderRadius": "4px",
+                "primaryBoxShadow": "rgba(0,0,0,.2) 5px 5px 7px 0",
+                "primaryHeadingBackgroundColor": "#6E8592",
+                "primaryHeadingFontSize": "12px",
+                "primaryHeadingTextColor": "#f5f5f5",
+                "secondaryBackgroundColor": "rgba(110,133,146,1)",
+                "secondaryBorder": "2px solid rgba(110,133,146,1)",
+                "secondaryBorderRadius": "4px",
+                "secondaryBoxShadow": "rgba(0,0,0,.2) 5px 5px 7px 0",
+                "secondaryHeadingBackgroundColor": "rgba(245,245,245,1)",
+                "secondaryHeadingFontSize": "16px",
+                "secondaryHeadingTextColor": "#6E8592",
+                "tabBackgroundColor": "rgba(221,221,221,1)",
+                "tabTextColor": "rgba(51,51,51,1)"
+            },
+            "portal": {
+                "background": "rgba(255,255,255,1)",
+                "fontFamily": "Arial, Helvetica, sans-serif"
+            },
+            "widgets": {
+                "background": "transparent",
+                "bodyFontSize": "12px",
+                "bodyTextColor": "rgba(0,0,0,1)",
+                "border": "thin solid transparent",
+                "headingFontSize": "18px",
+                "headingFontWeight": "400",
+                "headingTextColor": "rgba(51,51,51,1)"
+            }
+        },
+        "version": 1
+    },
+    "description": "sample tester",
+    "last_updated": "19 Jun 17 15:24 UTC",
+    "name": "portal1",
+    "system_key": "fcc09a920bdaff9da0b6acdb8b16",
+    "type": "custom"
+}

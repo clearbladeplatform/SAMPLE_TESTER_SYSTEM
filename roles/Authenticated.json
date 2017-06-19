@@ -1,0 +1,30 @@
+{
+    "Description": "Default role that is applied to all authenticated users",
+    "ID": "Authenticated",
+    "Name": "Authenticated",
+    "Permissions": {
+        "CodeServices": null,
+        "Collections": null,
+        "DevicesList": {
+            "Level": 0
+        },
+        "MsgHistory": {
+            "Level": 0
+        },
+        "Portals": [
+            {
+                "Level": 7,
+                "Name": "portal1",
+                "SystemKey": "fcc09a920bdaff9da0b6acdb8b16"
+            }
+        ],
+        "Push": {
+            "Level": 0
+        },
+        "SystemServices": null,
+        "Topics": null,
+        "UsersList": {
+            "Level": 0
+        }
+    }
+}

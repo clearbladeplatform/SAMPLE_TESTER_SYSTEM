@@ -1,0 +1,14 @@
+{
+    "current_version": 10,
+    "dependencies": "http,log",
+    "logging_enabled": "true",
+    "name": "SendGridTester",
+    "params": [
+        "body",
+        "subject",
+        "recipientList"
+    ],
+    "permissions": {},
+    "run_user": "",
+    "source": "SendGridTester.js"
+}

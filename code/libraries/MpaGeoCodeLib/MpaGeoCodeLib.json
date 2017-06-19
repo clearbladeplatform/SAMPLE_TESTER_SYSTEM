@@ -1,0 +1,8 @@
+{
+    "api": "",
+    "dependencies": "http,log",
+    "description": "",
+    "name": "MpaGeoCodeLib",
+    "version": 12,
+    "visibility": "system"
+}
